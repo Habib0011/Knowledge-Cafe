@@ -1,0 +1,7 @@
+.main-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.main-part{
+    margin-left: 100px;
+}

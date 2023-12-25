@@ -1,0 +1,35 @@
+.part-item img{
+    width: 600px;
+    height: 350px;
+
+}
+.part-items{
+    border: 5px solid dimgray;
+    margin-top: 15px;
+    width: 600px;
+}
+.part-item{
+    margin-top: 15px;
+    
+}
+.part-item h2{
+    margin: 0;
+}
+.author-part img{
+    width: 25px;
+    height: 25px;
+}
+.author-part p{
+    margin: 0;
+}
+.book-mark a{
+    text-decoration: none;
+}
+.author-info{
+    display: flex;
+    gap: 15px;
+}
+.author-part{
+    display: flex;
+    gap: 390px;
+}
