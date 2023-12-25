@@ -28,3 +28,12 @@
     display: flex;
     gap: 390px;
 }
+@media screen and (max-width:576px) {
+    .part-item img{
+        width: 100%;
+    }
+    .part-items{
+        width: 100%;
+    }
+    
+}

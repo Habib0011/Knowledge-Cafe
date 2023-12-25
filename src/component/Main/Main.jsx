@@ -25,6 +25,7 @@ const Main = () => {
     const newTextArray = [...text,data]
     setText(newTextArray)
 
+    
   }
 
     return (

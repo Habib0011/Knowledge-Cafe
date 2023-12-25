@@ -1,6 +1,8 @@
 
 import React from 'react';
 import './SidePart.css'
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const SidePart = (props) => {
     const times = props.timeCart
@@ -12,6 +14,7 @@ const SidePart = (props) => {
         textInfo = textInfo + text.text
        console.log(textInfo)
      }
+
 
     let addTime = 0
     for(const time of times){
