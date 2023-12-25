@@ -6,7 +6,7 @@
       "eyeColor": "brown",
       "name": "Penny Lester",
       "number": 5,
-      "text":"How to get your first job as a self-taught programmer"
+      "text":"1 How to get your first job as a self-taught programmer"
     },
     {
       "id": "658962aa66c77383a6dab3c0",
@@ -15,7 +15,7 @@
       "eyeColor": "brown",
       "name": "Tammie Oneal",
       "number":10,
-      "text":"How to get your first job as a self-taught programmer"
+      "text":"2 How to get your first job as a self-taught programmer"
     },
     {
       "id": "658962aa84a1a18aef5ffc61",
@@ -24,7 +24,7 @@
       "eyeColor": "green",
       "name": "Kinney Sharp",
       "number":12,
-      "text":"How to get your first job as a self-taught programmer"
+      "text":"3 How to get your first job as a self-taught programmer"
     },
     {
       "id": "658962aaeebec1aff8b6506b",
@@ -33,6 +33,6 @@
       "eyeColor": "green",
       "name": "Garrison Parks",
       "number":15,
-      "text":"How to get your first job as a self-taught programmer"
+      "text":"4 How to get your first job as a self-taught programmer"
     }
   ]

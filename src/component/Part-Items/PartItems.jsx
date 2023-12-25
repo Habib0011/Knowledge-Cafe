@@ -8,6 +8,8 @@ const PartItems = (props) => {
     const {name,picture,number,text} = props.part
     // console.log(number)
     const timeCalculate = props.timeCalculate
+
+    const markText = props.markText
     return (
         <div className='part-items'>
             <div className='part-item'>
@@ -26,7 +28,7 @@ const PartItems = (props) => {
             </div>
             <h2>{text} </h2>
 
-            <u><a href="#">mark as a read</a></u>
+            <u><a href="#" onClick={()=>markText(props.part)}>mark as a read</a></u>
             
         </div>
     );

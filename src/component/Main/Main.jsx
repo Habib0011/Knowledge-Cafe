@@ -6,6 +6,7 @@ import SidePart from '../Side-part/SidePart';
 const Main = () => {
  const [parts, setParts] = useState([])
  const [timeCart, setTimeCart] = useState([])
+ const [text, setText] = useState([])
  console.log(timeCart)
 //  console.log(parts)
 
@@ -15,14 +16,15 @@ const Main = () => {
    .then(data => setParts(data))
   },[])
 
-
-
   const timeCalculate = (part) => {
     const newTimeArray = [...timeCart,part]
     setTimeCart(newTimeArray)
+  }
 
-   
-    
+  const markText = (data) =>{
+    const newTextArray = [...text,data]
+    setText(newTextArray)
+
   }
 
     return (
@@ -32,6 +34,7 @@ const Main = () => {
              parts.map(part => <PartItems
                part = {part}
                timeCalculate = {timeCalculate}
+               markText = {markText}
                key ={part.id}
              ></PartItems>)
                }
@@ -39,6 +42,7 @@ const Main = () => {
             <div className='side-part'>
                <SidePart
                timeCart = {timeCart}
+               text = {text}
                ></SidePart>
             </div>
 
