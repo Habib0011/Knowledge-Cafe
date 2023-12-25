@@ -5,7 +5,9 @@ import SidePart from '../Side-part/SidePart';
 
 const Main = () => {
  const [parts, setParts] = useState([])
- console.log(parts)
+ const [timeCart, setTimeCart] = useState([])
+ console.log(timeCart)
+//  console.log(parts)
 
   useEffect(()=>{
    fetch('fakeData.json')
@@ -13,9 +15,13 @@ const Main = () => {
    .then(data => setParts(data))
   },[])
 
-  const timeCalculate = () => {
-    let time = document.getElementById('id').innerText
-    time = time+5;
+
+
+  const timeCalculate = (part) => {
+    const newTimeArray = [...timeCart,part]
+    setTimeCart(newTimeArray)
+
+   
     
   }
 
@@ -25,13 +31,15 @@ const Main = () => {
                {
              parts.map(part => <PartItems
                part = {part}
-               key ={part.id}
                timeCalculate = {timeCalculate}
+               key ={part.id}
              ></PartItems>)
                }
             </div>
             <div className='side-part'>
-               <SidePart></SidePart>
+               <SidePart
+               timeCart = {timeCart}
+               ></SidePart>
             </div>
 
             
